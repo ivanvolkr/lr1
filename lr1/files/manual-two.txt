@@ -1,0 +1,24 @@
+//manifest
+Manifest-Version: 1.0 
+Main-Class: com.company.Main 
+Class-Path: lib/commons-io.jar lib/commons-codec.jar
+
+find . -name '*.java' > source.txt
+
+cat source.txt 
+
+javac -classpath ./lib/commons-io.jar:./lib/commons-codec.jar -d build @source.txt
+
+cd build/com/company
+
+jar cvfm ../../../bin/Main.jar ../../../MANIFEST.MD * ../../../lib/
+
+cd ../../..
+
+cd bin/
+
+java -jar Main.jar -i
+
+java -jar Main.jar -md5 -f /home/cheraten/MEPHI/JAVA/LR1/files/yellowsubmarine.txt /home/cheraten/MEPHI/JAVA/LR1/files/manual.txt
+
+java -jar Main.jar -sha256 -f /home/cheraten/MEPHI/JAVA/LR1/files/yellowsubmarine.txt /home/cheraten/MEPHI/JAVA/LR1/files/yellowsubmarine.txt

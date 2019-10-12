@@ -1,0 +1,76 @@
+maxim@maxim-Aspire-A315-51:~$ cd LR1
+maxim@maxim-Aspire-A315-51:~/LR1$ bash manual.sh
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+added manifest
+adding: com/company/Main.class(in = 1873) (out= 1125)(deflated 39%)
+adding: com/company/Simple.class(in = 1728) (out= 972)(deflated 43%)
+adding: com/company/Interactive.class(in = 1093) (out= 627)(deflated 42%)
+maxim@maxim-Aspire-A315-51:~/LR1$ cd build
+maxim@maxim-Aspire-A315-51:~/LR1/build$ java -jar Main.jar -i
+Error: Unable to access jarfile Main.jar
+maxim@maxim-Aspire-A315-51:~/LR1/build$ cd ..
+maxim@maxim-Aspire-A315-51:~/LR1$ bash manual.sh
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+added manifest
+adding: com/company/Main.class(in = 1873) (out= 1125)(deflated 39%)
+adding: com/company/Simple.class(in = 1267) (out= 710)(deflated 43%)
+adding: com/company/Interactive.class(in = 1093) (out= 627)(deflated 42%)
+maxim@maxim-Aspire-A315-51:~/LR1$ java -jar Main.jar -i
+Error: Unable to access jarfile Main.jar
+maxim@maxim-Aspire-A315-51:~/LR1$ cd build
+maxim@maxim-Aspire-A315-51:~/LR1/build$ java -jar Main.jar -i
+
+Do you want to start hashing?
+Type the file path or NO
+home/Maxim/LR1/files/manual.txt
+Exception: WRONG FILE PATH
+
+Type the correct input information:
+For InteractiveMode: -i
+For SimpleMode with md5 hash: -md5 -f filename.txt
+For SimpleMode with sha256 hash: -sha256 -f filename.txt
+Try now
+maxim@maxim-Aspire-A315-51:~/LR1/build$ java -jar Main.jar -i
+
+Do you want to start hashing?
+Type the file path or NO
+~/LR1/files/manual.txt
+Exception: WRONG FILE PATH
+
+Type the correct input information:
+For InteractiveMode: -i
+For SimpleMode with md5 hash: -md5 -f filename.txt
+For SimpleMode with sha256 hash: -sha256 -f filename.txt
+Try now
+maxim@maxim-Aspire-A315-51:~/LR1/build$ java -jar Main.jar -i
+
+Do you want to start hashing?
+Type the file path or NO
+/home/maxim/LR1/files/manual.txt
+MD5: 660a8e81080182ca96201a94ce72b1c2
+SHA256: b84ca5a9daa2c9e3e56dafc30eb8b44727adb2d7
+
+Do you want to start hashing?
+Type the file path or NO
+/home/maxim/LR1/files/manual.txt
+MD5: 660a8e81080182ca96201a94ce72b1c2
+SHA256: b84ca5a9daa2c9e3e56dafc30eb8b44727adb2d7
+
+Do you want to start hashing?
+Type the file path or NO
+NO
+maxim@maxim-Aspire-A315-51:~/LR1/build$ java -jar Main.jar -md5 -f /home/maxim/LR1/files/manual.txt
+MD5: 660a8e81080182ca96201a94ce72b1c2
+maxim@maxim-Aspire-A315-51:~/LR1/build$ cd ..
+maxim@maxim-Aspire-A315-51:~/LR1$ bash manual.sh
+Note: Some input files use or override a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+added manifest
+adding: com/company/Main.class(in = 1873) (out= 1125)(deflated 39%)
+adding: com/company/Simple.class(in = 1267) (out= 710)(deflated 43%)
+adding: com/company/Interactive.class(in = 1093) (out= 627)(deflated 42%)
+maxim@maxim-Aspire-A315-51:~/LR1$ ^C
+maxim@maxim-Aspire-A315-51:~/LR1$ 
+
